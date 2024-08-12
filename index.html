@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwind Css</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">rizkipatrialinaldi</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden" >
+                        <span class="hamburger-line transition duration-500 origin-top-left"></span>
+                        <span class="hamburger-line transition duration-500"></span>
+                        <span class="hamburger-line transition duration-500 origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex hover:group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex hover:group-hover:text-primary">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex hover:group-hover:text-primary">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex hover:group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex hover:group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="block font-bold text-4xl mt-1 text-dark lg:text-5xl">Rizki Patria Linaldi</span></h1>
+                    <h2 class="font-medium text-amber-800 text-lg mb-5 lg:text-2xl">Web Developer  & <span class="text-indigo-800">UI UX Designer</span></h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan. bukan!</p> <!-- leading-relaxed untuk line height -->
+
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">Hubungi Saya</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0">
+                        <img src="./src/img/rizki.png" alt="Rizki Patria Linaldi" class="max-w-full mx-auto">
+                        <span class="absolute -top-10 -z-10 left-1/2 -translate-x-1/2">
+                            <svg width="400" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14B8A6" d="M45.9,-60.8C61.7,-51.7,78.2,-41.2,84.1,-26.5C90,-11.8,85.3,7.2,77.1,22.7C68.9,38.3,57.1,50.4,43.7,62.5C30.3,74.7,15.1,86.9,-1.1,88.4C-17.3,89.9,-34.7,80.8,-47.1,68.3C-59.6,55.8,-67.1,40,-74.1,23.1C-81,6.1,-87.2,-12.1,-84.2,-29.2C-81.2,-46.3,-69,-62.2,-53.4,-71.4C-37.8,-80.6,-18.9,-83,-1.9,-80.4C15,-77.7,30.1,-69.9,45.9,-60.8Z" transform="translate(100 100)" />
+                              </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-3xl mb-3">Tentang Saya</h4>
+                    <h2  class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk, belajar programming di WPU!</h2>
+                    <p class="text-base font-medium text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam laborum distinctio, obcaecati ipsum reiciendis et?</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-12">Mari berteman</h3>
+                    <p class="text-base font-medium text-secondary mb-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem veritatis saepe illo ratione, amet optio consequatur ducimus ut perferendis repellendus.</p>
+                    <div class="flex aligns-center">
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/rpatria12/" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 48 48">
+                                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                                </svg>
+                        </a>
+                        <!-- linkedln -->
+                        <a href="https://www.linkedin.com/in/rizki-patria-linaldi/" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 48 48">
+                                <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                                </svg>
+                        </a>
+                        <!-- github -->
+                         <a href="https://github.com/rpatriaa" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="20"">
+                                <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                            </svg>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora animi nostrum eligendi a dolores illum sapiente amet eos facere.</p>
+                </div>
+            </div>
+
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/paket1.jpg" alt="Landing Page">
+                    </div>
+                    <h3 class="font-semibold text-xl mt-5 text-dark mb-3">Landing Page Rizki Patria Linaldi</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore distinctio doloribus.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/paket2.jpg" alt="Salon SEA">
+                    </div>
+                    <h3 class="font-semibold text-xl mt-5 text-dark mb-3">Salon SEA Rizki Patria Linaldi</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore distinctio doloribus.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/paket3.jpg" alt="Article Emadding">
+                    </div>
+                    <h3 class="font-semibold text-xl mt-5 text-dark mb-3">Article Emadding Rizki Patria Linaldi</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore distinctio doloribus.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/background.jpg" alt="Jewepe Wedding">
+                    </div>
+                    <h3 class="font-semibold text-xl mt-5 text-dark mb-3">Wedding Rizki Patria Linaldi</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore distinctio doloribus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section end -->
+
+    <!-- CLients Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerja Sama</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora animi nostrum eligendi a dolores illum sapiente amet eos facere.</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100">
+                        <img src="./src/img/clients/google.svg" alt="">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100">
+                        <img src="./src/img/clients/gojek.svg" alt="">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100">
+                        <img src="./src/img/clients/tokopedia.svg" alt="">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100">
+                        <img src="./src/img/clients/traveloka.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CLients Section End -->
+
+    <!-- Blog Section start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora animi nostrum eligendi a dolores illum sapiente amet eos facere.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="./src/img/portfolio/paket1.jpg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary transition duration-300">Tips Belajar Programming</a>
+                            </h3>
+                            <p class="text-secondary font-medium text-base mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui cumque illo dolores sint deleniti voluptas est.</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="font-medium bg-primary rounded-md py-2 px-4 text-white opacity-75 tracking-wider transition duration-300 hover:opacity-100">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="./src/img/portfolio/paket2.jpg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary transition duration-300">Reveiw Keyboard GMMK Pro</a>
+                            </h3>
+                            <p class="text-secondary font-medium text-base mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis magni ducimus molestiae.</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="font-medium bg-primary rounded-md py-2 px-4 text-white opacity-75 tracking-wider transition duration-300 hover:opacity-100">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="./src/img/portfolio/paket3.jpg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary transition duration-300">Menikmati Secangkir Kopi</a>
+                            </h3>
+                            <p class="text-secondary font-medium text-base mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores totam in eligendi id odio suscipit nam eveniet quaerat tempora!</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="font-medium bg-primary rounded-md py-2 px-4 text-white opacity-75 tracking-wider transition duration-300 hover:opacity-100">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, hic.</p>
+                </div>
+            </div>
+            <form>
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-primary">Nama</label>
+                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:shadow-md">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:shadow-md">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base font-bold text-primary">Pesan</label>
+                        <textarea id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:shadow-md h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button class="text-base font-semibold text-white bg-primary rounded-full py-3 px-8 w-full">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl text-white mb-5">WPU</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+                    <p>rpatria38@gmail.com</p>
+                    <p>Jl Bukit Rt0392</p>
+                    <p>Depok</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Teknologi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Tentang Saya </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full pt-10 border-t border-slate-700">
+                <div class="flex aligns-center justify-center mb-5">
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/rpatria12/" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 48 48">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                            </svg>
+                    </a>
+                    <!-- linkedln -->
+                    <a href="https://www.linkedin.com/in/rizki-patria-linaldi/" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 48 48">
+                            <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                            </svg>
+                    </a>
+                    <!-- github -->
+                     <a href="https://github.com/rpatriaa" target="_blank" class="w-9 h-9 mr-3 border rounded-full flex justify-center items-center border-slate-300 hover:border-primary hover:bg-zinc-200">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="20"">
+                            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                        </svg>
+                     </a>
+                </div>
+                <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan 💗 oleh <a href="https://instagram.com/rpatria12" class="text-primary font-bold" target="_blank">Rizki Patria Linaldi</a> menggunakan <a href="https://tailwindcss.com" target="_blank" class="text-sky-500 font-bold">Tailwind CSS</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Javascript start -->
+    <script src="src/js/script.js"></script>
+    <!-- Javascript end -->
+
+</body>
+</html>
