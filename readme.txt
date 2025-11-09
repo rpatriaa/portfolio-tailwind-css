@@ -1,5 +1,5 @@
 Membuat Portfolio menggunakan Tailwind
-1. Membuat folder untuk menyimpa project
+1. Membuat folder untuk menyimpan project
 2. Buat file baru index.html
 3. Buka Documentasi Tailwind, Installation CLI
 4. Sebelum install tailwind, inisialisasi npm terlebih dahulu npm init -y
